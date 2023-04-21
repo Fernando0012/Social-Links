@@ -1,0 +1,637 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	display: flex;
+	color: var(--body-bg-color);
+	text-align: center;
+	align-items: center;
+}
+
+:root {
+	--body-bg-color: #faf7fd;
+	--purple: #bb99dd;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3.7rem;
+	text-align: center;
+	width: 36rem;
+	left: auto;
+	right: auto;
+	margin: auto;
+	top: 0;
+}
+
+/*--- Photo ---*/
+
+.container .profile {
+    margin-top: 3.2rem;
+	width: 21.3rem;
+	height: 21.3rem;
+	top: 6rem;
+	padding: 0.5rem;
+	border-radius: 50%;
+	border: 0.2rem solid var(--purple);
+}
+
+.container .profile img {
+	width: 20rem;
+	height: 20rem;
+    margin-bottom: 1rem;
+	border-radius: 50%;
+	border: 0.2rem solid var(--purple);
+}
+
+/*--- Text ---*/
+
+.container .profile p {
+	width: 9.9rem;
+	height: 2.4rem;
+    margin-left: 5rem;
+
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.18rem;
+	line-height: 2.4rem;
+
+	text-align: center;
+	color: var(--purple);
+}
+
+/*--- Buttons ---*/
+
+.container ul {
+	margin-top: 1.5rem;
+	display: grid;
+	gap: 2.4rem;
+	align-items: center;
+	text-align: center;
+	width: 42.6rem;
+	top: 33rem;
+}
+
+.container ul li .button {
+	text-align: center;
+	border: 0.2rem solid var(--purple);
+	border-radius: 0.8rem;
+	width: 32.6rem;
+	padding: 0.9rem;
+	left: 20rem;
+	top: 0.4rem;
+	transition: 0.5s;
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+}
+
+/*--- Icons ---*/
+
+.container ul li .button i.icons {
+	width: 42.6rem;
+	padding: 1rem;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 300;
+	line-height: 1.9rem;
+
+	text-align: center;
+	font-size: 1.8rem;
+}
+
+.container ul li .github {
+	padding-left: 1.7rem;
+	padding-right: 1.7rem;
+}
+
+.container ul li .linkedin {
+	padding-left: 1.3rem;
+	padding-right: 1.3rem;
+}
+
+.container ul li .button {
+	padding-top: 1.5rem;
+}
+
+/*--- Button animation ---*/
+
+.instagram:hover {
+	color: white;
+	background: linear-gradient(#515bd4, #8134af, #dd2a7b);
+}
+
+.github:hover {
+	color: white;
+	background: linear-gradient(#171515, #373535, #5b5959);
+}
+
+.linkedin:hover {
+	color: white;
+	background: linear-gradient(#0542e8, #1f37e8, #254ef6);
+}
+
+.whatsapp:hover {
+	color: white;
+	background: linear-gradient(
+		rgb(5, 142, 24),
+		rgb(6, 192, 31),
+		rgb(6, 241, 37)
+	);
+}
+
+/*
+@media(min-width: 560px){
+    html{
+        font-size: 60.5%; 
+    }
+
+    
+.container{
+    padding: 13rem;
+    margin:0 6.6rem;
+    top: 0;
+}
+
+    .container .perfil{
+        position: relative;
+        width: 21.3rem;
+        height: 21.3rem;
+        left: 16rem;
+        top: 0;
+        padding: .5rem;
+       border-radius: 50%;
+       border:0.2rem solid var(--purple);
+    }
+    
+    .container .perfil .image .foto {
+        top: 0;
+        width: 20rem;
+        height: 20rem;
+       border-radius: 50%;
+       border:0.2rem solid var(--purple);
+    }
+    
+
+.container .perfil .text{
+    position: absolute;
+    width: 9.9rem;
+    height: 2.4rem;
+    margin: 1.5rem;
+    left: 3.2rem;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.23rem;
+    line-height: 2.4rem;
+
+    text-align: center;
+    color: var(--purple);
+}
+
+
+.container .buttons{
+    position: absolute;
+    display: grid;
+    gap: 1.7rem;
+    align-items: center;
+    width: 42.6rem;
+    height: 1rem;
+    margin: 0 4.4rem;
+    top: 38.7rem;
+}
+
+.container .buttons .button{
+    display: flex;
+    align-items: center;
+    border: .2rem solid var(--purple);
+    border-radius: .8rem;
+    width: 32.6rem;
+    height: 4.9rem;
+    left: 20rem;
+    top: .4rem;
+    margin: 0 auto;
+    transition: 0.5s;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.container .buttons .button i.icons{
+    width: 42.6rem;
+    height: 4.9rem;
+    padding: 1.2rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.6rem;
+
+    text-align: center;
+    font-size: 1.8rem;
+    margin-right: 1.4rem;
+}
+    
+
+}
+
+
+@media(min-width: 660px){
+    html{
+        font-size: 47.8%; 
+    }
+
+    
+.container{
+    left: auto;
+    right: auto;
+    margin: 0 31.6rem;
+    top: 0;
+}
+
+    .container .perfil{
+        position: relative;
+        width: 25.3rem;
+        height: 25.3rem;
+        left: auto;
+        right: auto;
+        top: auto;
+        margin-left: auto;
+        top: 0;
+        padding: .5rem;
+       border-radius: 50%;
+       border:0.2rem solid var(--purple);
+    }
+    
+    .container .perfil .image .foto {
+        top: 0;
+        width: 24rem;
+        height: 24rem;
+       border-radius: 50%;
+       border:0.2rem solid var(--purple);
+    }
+    
+
+.container .perfil .text{
+    position: absolute;
+    width: 9.9rem;
+    height: 2.4rem;
+    margin: 1.5rem;
+    left: 3.2rem;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.27rem;
+    line-height: 2.4rem;
+
+    text-align: center;
+    color: var(--purple);
+}
+
+
+.container .buttons{
+    position: absolute;
+    display: grid;
+    gap: 1.7rem;
+    align-items: center;
+    width: 42.6rem;
+    height: 1rem;
+    top: 42.7rem;
+    margin: 0 4rem;
+    left: auto;
+    right: 15rem;
+}
+
+.container .buttons .button{
+    display: flex;
+    align-items: center;
+    border: .2rem solid var(--purple);
+    border-radius: .8rem;
+    width: 32.6rem;
+    height: 4.9rem;
+    left: 20rem;
+    top: .4rem;
+    margin: 0 auto;
+    transition: 0.5s;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+}
+
+.container .buttons .button i.icons{
+    width: 42.6rem;
+    height: 4.9rem;
+    padding: 1.2rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.6rem;
+
+    text-align: center;
+    font-size: 1.8rem;
+    margin-right: 1.4rem;
+}
+    
+
+}
+
+@media(min-width: 740px){
+    html{
+        font-size: 58.5%; 
+    }
+
+    
+.container{
+    left: auto;
+    right: auto;
+    margin: 0 33.6rem;
+    top: 0;
+}
+
+    .container .perfil{
+        position: relative;
+        width: 27.3rem;
+        height: 27.3rem;
+        left: auto;
+        right: auto;
+        top: auto;
+        margin-left: auto;
+        padding: .5rem;
+       border-radius: 50%;
+       border:0.2rem solid var(--purple);
+    }
+    
+    .container .perfil .image .foto {
+        top: 0;
+        width: 26rem;
+        height: 26rem;
+       border-radius: 50%;
+       border:0.2rem solid var(--purple);
+    }
+
+
+.container .perfil .text{
+    position: absolute;
+    width: 9.9rem;
+    height: 2.4rem;
+    margin: 1.5rem;
+    left: 6.2rem;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.27rem;
+    line-height: 2.4rem;
+
+    text-align: center;
+    color: var(--purple);
+}
+
+
+.container .buttons{
+    position: absolute;
+    display: grid;
+    gap: 1.7rem;
+    align-items: center;
+    width: 42.6rem;
+    height: 1rem;
+    top: 45.5rem;
+    margin: 0 4rem;
+    left: auto;
+    right: 12rem;
+}
+
+.container .buttons .button{
+    display: flex;
+    align-items: center;
+    border: .2rem solid var(--purple);
+    border-radius: .8rem;
+    width: 32.6rem;
+    height: 4.9rem;
+    left: 20rem;
+    top: .4rem;
+    margin: 0 auto;
+    transition: 0.5s;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.container .buttons .button i.icons{
+    width: 42.6rem;
+    height: 4.9rem;
+    padding: 1.2rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.6rem;
+
+    text-align: center;
+    font-size: 1.8rem;
+    margin-right: 1.4rem;
+}
+
+}
+
+
+@media(min-width: 940px){
+    html{
+        font-size: 65.5%; 
+    }
+
+    
+.container{
+    left: auto;
+    right: auto;
+    margin: 0 41.6rem;
+    top: 0;
+}
+
+    .container .perfil{
+        position: relative;
+        width: 27.3rem;
+        height: 27.3rem;
+        left: auto;
+        right: auto;
+        top: auto;
+        margin-left: auto;
+        padding: .5rem;
+       border-radius: 50%;
+       border:0.2rem solid var(--purple);
+    }
+    
+    .container .perfil .image .foto {
+        top: 0;
+        width: 26rem;
+        height: 26rem;
+       border-radius: 50%;
+       border:0.2rem solid var(--purple);
+    }
+    
+
+.container .perfil .text{
+    position: absolute;
+    width: 9.9rem;
+    height: 2.4rem;
+    margin: 1.5rem;
+    left: 6.2rem;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.27rem;
+    line-height: 2.4rem;
+
+    text-align: center;
+    color: var(--purple);
+}
+
+
+.container .buttons{
+    position: absolute;
+    display: grid;
+    gap: 1.7rem;
+    align-items: center;
+    width: 42.6rem;
+    height: 1rem;
+    top: 45.5rem;
+    margin: 0 4rem;
+    left: 43rem;
+    right: auto;
+}
+
+.container .buttons .button{
+    display: flex;
+    align-items: center;
+    border: .2rem solid var(--purple);
+    border-radius: .8rem;
+    width: 32.6rem;
+    height: 4.9rem;
+    left: 20rem;
+    top: .4rem;
+    margin: 0 auto;
+    transition: 0.5s;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+}
+
+.container .buttons .button i.icons{
+    width: 42.6rem;
+    height: 4.9rem;
+    padding: 1.2rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.6rem;
+
+    text-align: center;
+    font-size: 1.8rem;
+    margin-right: 1.4rem;
+}
+
+}
+
+@media(min-width: 1620px){
+    html{
+        font-size: 94.5%; 
+    }
+
+    
+.container{
+    position: relative;
+    left: auto;
+    right: auto;
+    margin: 0 29.6rem;
+    top: 0;
+}
+
+    .container .perfil{
+        position: absolute;
+        width: 21.3rem;
+        height: 21.3rem;
+        left: auto;
+        right: 55rem;
+        top: auto;
+        margin-left: auto;
+        padding: .5rem;
+       border-radius: 50%;
+       border:0.2rem solid var(--purple);
+    }
+    
+    .container .perfil .image .foto {
+        top: 0;
+        width: 20rem;
+        height: 20rem;
+       border-radius: 50%;
+       border:0.2rem solid var(--purple);
+    }
+    
+
+.container .perfil .text{
+    position: absolute;
+    width: 9.9rem;
+    height: 2.4rem;
+    margin: 1.5rem;
+    left: 3.2rem;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.24rem;
+    line-height: 2.4rem;
+
+    text-align: center;
+    color: var(--purple);
+}
+
+
+.container .buttons{
+    position: absolute;
+    display: grid;
+    align-items: center;
+    width: 32.6rem;
+    height: 1rem;
+    top: 4.7rem;
+    margin: 0;
+    left: auto;
+    right: auto;
+}
+
+.container .buttons .button{
+    display: flex;
+    align-items: center;
+    border: .2rem solid var(--purple);
+    border-radius: .8rem;
+    width: 32.6rem;
+    height: 4.9rem;
+    left: auto;
+    right: auto;
+    top: .4rem;
+    margin: 0 auto;
+    transition: 0.5s;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.container .buttons .button i.icons{
+    width: 42.6rem;
+    height: 4.9rem;
+    padding: 1.2rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.6rem;
+
+    text-align: center;
+    font-size: 1.6rem;
+    margin-right: 1.4rem;
+}
+}
+*/
